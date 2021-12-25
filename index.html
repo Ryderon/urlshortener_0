@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>URL Shortner</title>
+</head>
+
+<body>
+    <article class="container">
+        <article class="inputForm">
+            <form autocomplete="off" onsubmit="shortenURL()">
+                <article class="inputUrl">
+                    <label for="longUrl">Long Url : </label>
+                    <input id="longUrl" type="text" placeholder="https://sample-url.com" oninput="checkURL()">
+                </article>
+
+            </form>
+
+            <table>
+                <tbody>
+                    <td id="errorMessage"></td>
+                </tbody>
+                <tbody>
+                    <td id="previousUrl"></td>
+                </tbody>
+            </table>
+
+            <button id="shortenUrl" onclick="shortenURL()">ShorteN</button>
+        </article>
+
+        <article class="history">
+            <!-- <table id="historyTable">
+                <caption>Shortened URLs</caption>
+                <thead>
+                    <tr>
+                        <th class="UrlTable">Long Url</th>
+                        <th class="UrlTable">Short Url</th>
+                        <th class="visitsTable">Visits</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="UrlTable"><a href="http://google.com">http://google.com</a></td>
+                        <td class="UrlTable"><a href="http://google.com">http://localhost.com/abcde</a></td>
+                        <td class="visitsTable">165</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td class="UrlTable"><a href="http://google.com">http://google.com</a></td>
+                        <td class="UrlTable"><a href="http://google.com">http://localhost.com/abcde</a></td>
+                        <td class="visitsTable">12</td>
+                    </tr>
+                </tbody>
+            </table> -->
+        </article>
+    </article>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
